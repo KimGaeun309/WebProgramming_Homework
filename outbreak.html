@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Outbreak</title>
+    <style>
+      @import url(common.css);
+      @import url(outbreak.css);
+    </style>
+    <script>
+      function load(URL) {
+        window.open(URL, "myWin", "left=300,top=300,width=400,height=300");
+      }
+    </script>
+  </head>
+  <body>
+    <header id="logo">
+      <h2>Covid-19 News</h2>
+    </header>
+    <nav id="menubar">
+      <ul id="mainList">
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="status.html">Status</a>
+        </li>
+        <li>
+          <a href="preevent.html">Preevent</a>
+        </li>
+        <li>
+          <a href="news.html">News</a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <article id="covid-intro">
+        <h2>Covid-19 소개</h2>
+        <hr />
+        <h3>정보</h3>
+        <ul class="covid-info">
+          <li>
+            코로나 바이러스는 사람과 다양한 동물에 감염될 수 있는 바이러스이다.
+          </li>
+          <li>
+            이는 주로 감염자의 호흡기 침방울에 의해 전파되며, 1~14일의 잠복기를
+            가진다.
+          </li>
+          <li>
+            임상 증상은 다양하나 주요 증상으로는 발열, 기침, 호흡곤란, 오한,
+            근육통, 두통, 인후통, 후각.미각소실 등이 있다.
+          </li>
+          <li>
+            특이치료제는 없으며 증상에 따른 해열제, 수액 공급, 진해재 등
+            대증치료를 하고 있다.
+          </li>
+        </ul>
+        <img
+          src="images/status/outbreak/corona-virus-banner.jpg"
+          width="400"
+          height="150"
+        />
+
+        <h3>분류</h3>
+
+        <ul class="covid-type">
+          <li>알파 - 사람과 동물에게 감염</li>
+          <li>베타 - 사람과 동물에게 감염</li>
+          <li>감마 - 동물에게 감염</li>
+          <li>델타 - 동물에게 감염</li>
+        </ul>
+        <img
+          src="images/status/outbreak/covid-19-type.jpg"
+          width="400"
+          height="100"
+        />
+      </article>
+      <article id="covid-status">
+        <h2>발생 현황</h2>
+        <hr />
+        <table>
+          <caption>
+            <strong>발생현황</strong>
+            (12.11.00시 기준, '20.1.3 이후누계, 단위:명)
+          </caption>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>사망</th>
+              <th>재원 위중증</th>
+              <th>신규 입원</th>
+              <th>확진</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>일일</td>
+              <td>80</td>
+              <td>856</td>
+              <td>825</td>
+              <td>6,977</td>
+            </tr>
+            <tr>
+              <td>최근 7일간 일평균</td>
+              <td>57</td>
+              <td>807</td>
+              <td>803</td>
+              <td>6,097</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+    <footer>
+      <p>2021.12.11 작성</p>
+      <div>
+        <a href="javascript:load('http://ncov.mohw.go.kr/')" id="covid19"
+          >코로나 바이러스 감염증 19</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

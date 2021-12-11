@@ -1,0 +1,11 @@
+img {
+  margin: 30px 50px;
+}
+
+figure {
+  display: inline-block;
+}
+
+figcaption {
+  margin-left: 60px;
+}

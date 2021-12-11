@@ -1,0 +1,22 @@
+section {
+  margin: 0px 50px;
+}
+
+canvas {
+  margin-right: 50px;
+}
+
+.vaccin-info {
+  list-style-type: square;
+  display: inline-block;
+  width: 600px;
+}
+
+.vaccin-type {
+  list-style-type: circle;
+  width: 1185px;
+}
+
+img {
+  margin-left: 25px;
+}

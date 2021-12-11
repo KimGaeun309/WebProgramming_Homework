@@ -1,0 +1,18 @@
+body.status {
+  background: rgba(9, 35, 54, 0.65);
+}
+
+.vaccin-outbreak {
+  margin: 100px;
+}
+
+.image {
+  display: inline-block;
+  margin: 0px 50px;
+}
+
+.image:hover {
+  border: 5px solid darkgray;
+  height: 490px;
+  width: 490px;
+}

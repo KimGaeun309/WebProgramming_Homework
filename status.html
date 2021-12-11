@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Status</title>
+    <style>
+      @import url(common.css);
+      @import url(status.css);
+    </style>
+    <script>
+      function load(URL) {
+        window.open(URL, "myWin", "left=300,top=300,width=400,height=300");
+      }
+    </script>
+  </head>
+  <body id="status">
+    <header id="logo">
+      <h2>Covid-19 News</h2>
+    </header>
+    <nav id="menubar">
+      <ul id="mainList">
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="status.html">Status</a>
+        </li>
+        <li>
+          <a href="preevent.html">Preevent</a>
+        </li>
+        <li>
+          <a href="news.html">News</a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <div class="vaccin-outbreak">
+        <a href="vaccin.html"
+          ><img
+            src="images/status/vaccin.jpg"
+            width="500"
+            height="500"
+            class="image"
+        /></a>
+        <a href="outbreak.html"
+          ><img
+            src="images/status/outbreak.jpg"
+            width="500"
+            height="500"
+            class="image"
+        /></a>
+      </div>
+    </section>
+
+    <footer>
+      <p>2021.12.11 작성</p>
+      <div>
+        <a href="javascript:load('http://ncov.mohw.go.kr/')" id="covid19"
+          >코로나 바이러스 감염증 19</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

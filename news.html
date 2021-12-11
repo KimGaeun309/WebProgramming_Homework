@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>News</title>
+    <style>
+      @import url(common.css);
+      @import url(news.css);
+    </style>
+    <script>
+      function load(URL) {
+        window.open(URL, "myWin", "left=300,top=300,width=400,height=300");
+      }
+
+      function store() {
+        if (!window.localStorage) {
+          alert("지원하지 않습니다.");
+          return;
+        }
+        var title = document.getElementById("title").value;
+        var link = document.getElementById("link").value;
+        localStorage.setItem(title, link);
+      }
+      function view() {
+        var win = window.open("view_news.html", "viewwin");
+      }
+    </script>
+  </head>
+  <body>
+    <header id="logo">
+      <h2>Covid-19 News</h2>
+    </header>
+    <nav id="menubar">
+      <ul id="mainList">
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="status.html">Status</a>
+        </li>
+        <li>
+          <a href="preevent.html">Preevent</a>
+        </li>
+        <li>
+          <a href="news.html">News</a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <a href="https://news.naver.com/" target="_blank"
+        ><img src="images/news/naver-news.jpg"
+      /></a>
+      <form>
+        <label>기사 제목<input id="title" type="text" size="20" /></label>
+        <br />
+        <label
+          >링크
+          <input id="link" type="text" size="25" />
+        </label>
+        <br />
+        <input type="button" value="저장" onclick="store()" />
+        <input type="button" value="열기" onclick="view()" />
+      </form>
+    </section>
+    <footer>
+      <p>2021.12.11 작성</p>
+      <div>
+        <a href="javascript:load('http://ncov.mohw.go.kr/')" id="covid19"
+          >코로나 바이러스 감염증 19</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
